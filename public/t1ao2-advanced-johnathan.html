@@ -1,10 +1,10 @@
-<input type=text id="myText01" value="3"><br>
+<input type=text id="myText01" value="16"><br>
 
-<input type=button value=run onclick="{
-
+<input type=button value=run onclick="{                                                          
       let myTemp = document.getElementById('myText01').value
       document.getElementById('myDiv01').innerHTML = myTemp
-}">
+    }">
+
 <div id="myDiv01">...</div>
 
 <if(myTemp==3)"{
@@ -19,3 +19,20 @@ document.getElementById('myDiv01').innerHTML='life'
       document.getElementById('myDiv02').innerHTML = myTemp
 }">
 <div id="myDiv02">...</div>
+
+      
+      <input type=text id="myText03" value="3"><br>
+
+<input type=button value=run onclick="{
+
+   let myText = Math.abs(document.getElementById(myText03).value)                                   
+     let myTemp = 'You are a teenager'
+       if (myText <= 12){ myTemp = 'You are a child'}
+       if (myText >= 20 && myText < 65){myTemp = 'You are a adult'}
+       if (myText >=65){ myTemp = 'You can retire'}                               
+      let myTemp = document.getElementById('myText03').value
+      document.getElementById('myDiv03').innerHTML = myTemp
+}">
+<div id="myDiv03">...</div>
+      
+      
