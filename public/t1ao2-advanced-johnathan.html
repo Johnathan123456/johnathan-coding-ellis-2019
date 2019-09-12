@@ -21,11 +21,11 @@ document.getElementById('myDiv01').innerHTML='life'
 <div id="myDiv02">...</div>
 
       
-      <input type=text id="myText03" value="3"><br>
+      <input type=text id="myText03" value="16"><br>
 
 <input type=button value=run onclick="{
 
-                                    
+                          let myText = Math.abs(document.getElementById('myText03').value)          
      let myTemp = 'You are a teenager'
        if (myText <= 12){ myTemp = 'You are a child'}
        if (myText >= 20 && myText < 65){myTemp = 'You are a adult'}
