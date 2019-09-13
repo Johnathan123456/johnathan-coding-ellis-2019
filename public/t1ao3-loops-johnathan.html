@@ -1,4 +1,4 @@
-<input type =text id="myText01" value="a"><br>
+<input type =text id="myText01" value="1"><br>
 
 <input type=button value="Loop" onclick="{
  let myTemp = document.getElementById('myText01').value
@@ -6,10 +6,22 @@
  document.getElementById('myDiv01').innerHTML = ' '
                          
                                          
- for (let myLoop=a;   myLoop < myTemp;  myLoop++){
+ for (let myLoop=0;   myLoop < myTemp;  myLoop++){
        mySum += 'Loop #: '+myLoop+'<br>'                                 
          }                      
            document.getElementById('myDiv01').innerHTML = mySum                            
       }">
 
 <div id="myDiv01">...</div>
+
+
+aa: for (int i = 1; i <= 3; i++) {
+    if (i == 1)
+      continue;
+    bb: for (int j = 1; j <= 3; j++) {
+        if (i == 2 && j == 2) {
+            break aa;
+        }
+        System.out.println(i + " " + j);
+    }
+}
