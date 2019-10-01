@@ -1,8 +1,24 @@
-<input type=text id="myText01" value="3"><br>
+<h1 align=center>t1a09-objects-johnathan.html<br>
+   Objects, decisions, decimals by johnathan</h1>
+
+
+Body Temp: <input type=text id="myText01" value="36.1">degrees Celcius
+<br>
 
 <input type=button value=run onclick="{
-   let car = {type:'Fiat', model:'500',color:'White'}                                   
+   //let car = {type:'Fiat', model:'500',color:'White'}     
+  let myPerson = {'age':'16', name:'johnathan',} 
       let myTemp = document.getElementById('myText01').value
-      document.getElementById('myDiv01').innerHTML = JSON.stringify(car) + '    ' + car.type + '     ' + car.model + '    ' + car.color 
+                                      
+     letmyPrintout =  'myPerson object ='+
+       JSON.stringify(myPerson, null, 3) +
+         'myPerson.age = ' +myPerson.age  
+                                      
+       let myIf = 'cool'                               
+        if (parseInt(myPerson.age) >= 20 {myIf = 'Youare a adult'}                              
+                                      
+        document.getElementById('myDiv01').innerHTML = myIf                              
+        document.getElementById('myTextArea01'). = myPrintout                               
 }">
-<div id="myDiv01">...</div>
+<div id="myDiv01">...</div><br>
+<textarea id="myTextarea01" rows=10 cols=80 noWRAP>...</textarea>
