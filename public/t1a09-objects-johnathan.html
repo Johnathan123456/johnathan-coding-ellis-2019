@@ -1,7 +1,8 @@
 <input type=text id="myText01" value="3"><br>
 
 <input type=button value=run onclick="{
+   let car = {type:'Fiat', model:'500',color:'White'}                                   
       let myTemp = document.getElementById('myText01').value
-      document.getElementById('myDiv01').innerHTML = myTemp
+      document.getElementById('myDiv01').innerHTML = JSON.stringify(car) + '    ' + car.type + '     ' + car.model + '    ' + car.color 
 }">
 <div id="myDiv01">...</div>
