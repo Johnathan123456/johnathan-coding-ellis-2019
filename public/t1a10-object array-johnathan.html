@@ -1,20 +1,35 @@
 <h1 align=center>t1a10-object array-johnathan.html<br>
    Objects, decisions, decimals by johnathan</h1>
 
-
-<input type=text id="myText01" value="80">
 <br>
 
 <input type=button value="Show Object Array" onclick="{   
   let myObjectArray = {'age':'22', 'name':'johnathan'};
       let myTemp = document.getElementById('myText01').value
                                       
-     let myPrintout =  'myObjectArray object :' +
-       JSON.stringify(myObjectArray, null, 3) + ' myObjectArray.age : ' + myObjectArray.age                             
+     let myPrintout =  'myObjectArray object' +
+       JSON.stringify(myObjectArray, null, 3)                           
                                                                  
         document.getElementById('myTextArea01').value = myPrintout  
         document.getElementById('myDiv01').innerHTML =  "nothing useful here"                                                                      
 }">
+
+<input type=button value="Show Array Object" onclick="{   
+  let myArrayObject = {'age':'22', 'name':'johnathan'};
+      let myTemp = document.getElementById('myText01').value
+                                      
+     let myPrintout =  'myArrayObject object' +
+       JSON.stringify(myArrayObject, null, 3)                           
+                                                                 
+        document.getElementById('myTextArea01').value = myPrintout  
+        document.getElementById('myDiv01').innerHTML =  "nothing useful here"                                                                      
+}">
+
+
+
+
+
+
 
 <div id="myDiv01">...</div><br>
 
