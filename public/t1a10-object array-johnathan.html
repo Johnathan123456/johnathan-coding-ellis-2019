@@ -5,7 +5,11 @@
 
 <input type=button value="Show Object Array" onclick="{   
   let myObjectArray = {name:'Johnathan', myToys:["DS","Gameboy"]};
-      let myTemp = document.getElementById('myText01').value
+     myObjectArray.myToys[0]
+     myObjectArray.myToys[1]                                                          
+                                                              
+                                                               
+   let myTemp = document.getElementById('myText01').value
                                       
      let myPrintout =  'myObjectArray' +
        JSON.stringify(myObjectArray, null, 3)                           
