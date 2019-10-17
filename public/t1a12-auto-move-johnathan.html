@@ -3,11 +3,13 @@
 
 <div id="myDiv01" style="position:absolute; left:200; top:10;">Ree</div>
 
-<input type=button value="Go Right" style="background-color:blue; color:yellow; "
-       onclick="{
+<input type=button value="Go Right" onclick="{
+                
                 clearInterval(myInterval)
                 myInterval = setInterval(function(){
+                                             
                 document.getElementById('myDiv01').style.left = parseInt(document.getElementById('myDiv01').style.left) + 10
-                } ,200)
+                
+               } ,200)
         }">
 
