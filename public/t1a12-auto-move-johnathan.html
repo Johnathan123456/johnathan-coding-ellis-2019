@@ -16,20 +16,21 @@
 
 <input type=button value="Go Right" onclick="{
                 
-                clearInterval(myInterval)
-                myInterval = setInterval(function(){
+    clearInterval(myInterval)
+    myInterval = setInterval(function(){
                                              
-                document.getElementById('myDiv01').style.left = parseInt(document.getElementById('myDiv01').style.left) + 10
+        document.getElementById('myDiv01').style.left = parseInt(document.getElementById('myDiv01').style.left) + 10
                 
-               } ,200)
-        }">
+    } ,200)
+                                             
+}">
 
 <input type=button value="Go Left" onclick="{
                 
                 clearInterval(myInterval)
                 myInterval = setInterval(function(){
                                              
-                document.getElementById('myDiv01').style.left = parseInt(document.getElementById('myDiv01').style.left) - 10
+                   document.getElementById('myDiv01').style.left = parseInt(document.getElementById('myDiv01').style.left) - 10
                 
                } ,200)
         }">
