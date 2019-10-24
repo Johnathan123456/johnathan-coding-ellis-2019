@@ -17,7 +17,7 @@ function myHitOther(my1,my2){
        return true
    }
 }
-
+ let myInterval
 </script>
 
 
@@ -30,6 +30,13 @@ function myHitOther(my1,my2){
       parseInt(document.getElementById('myImg01').style.left) + 10
    if ( myHitOther('myImg01','myImg02') ){
       document.getElementById('myImg01').style.left = '20px'
-     }
+     
+     clearInterval(myInterval)
+    myInterval = setInterval(function(){
+                                             
+        document.getElementById('myImg01').style.left = parseInt(document.getElementById('myImg01').style.left) + 10
+                
+    } ,200)
+   }
 }">
 
