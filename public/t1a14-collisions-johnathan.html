@@ -27,6 +27,18 @@ function myHitOther(my1,my2){
 <input type=button value="go Right"  onclick="{
    document.getElementById('myImg01').style.left = 
       parseInt(document.getElementById('myImg01').style.left) + 10
+                                              
+ <input type=button value="go Left"  onclick="{
+   document.getElementById('myImg01').style.left = 
+      parseInt(document.getElementById('myImg01').style.left) - 10   
+       
+ //<input type=button value="go Right"  onclick="{
+   document.getElementById('myImg01').style.left = 
+      parseInt(document.getElementById('myImg01').style.left) + 10
+
+<input type=button value="go Right"  onclick="{
+   document.getElementById('myImg01').style.left = 
+      parseInt(document.getElementById('myImg01').style.top) - 10
   
  if ( myHitOther('myImg01','myImg02') ){
       document.getElementById('myImg01').style.left = '20px'
