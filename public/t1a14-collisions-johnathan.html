@@ -27,7 +27,14 @@ function myHitOther(my1,my2){
 <input type=button value="go Right"  onclick="{
    document.getElementById('myImg01').style.left = 
       parseInt(document.getElementById('myImg01').style.left) + 10
-  
+                
+    clearInterval(myInterval)
+    myInterval = setInterval(function(){
+                                             
+        document.getElementById('myDiv01').style.left = parseInt(document.getElementById('myDiv01').style.left) + 10
+                
+    } ,200)
+                                             
  if ( myHitOther('myImg01','myImg02') ){
       document.getElementById('myImg01').style.left = '20px'                                        
      
