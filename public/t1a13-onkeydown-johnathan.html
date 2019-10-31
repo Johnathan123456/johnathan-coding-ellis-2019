@@ -12,5 +12,26 @@
 
 <body onkeydown="{
                  
-                 let mykey = event.key
-             //  let mykey = String.to
+                 let myKey = event.key
+             //  let myKey = String.toLowerCase(event.key)
+                 
+             if (myKey == 'd') {
+                 clearInterval(myInterval)
+                 myInterval = setInterval(function(){
+                 
+                     document.getElementById('myDiv01').style.left =
+                 
+              parseInt(docunent.getElementById('myDiv01').style.left) + 3
+                 myIsOnScreen()
+                 } ,20)
+            }
+         
+        }">
+   
+   <h1 align=center>t1a13-onkeydown-johnathan</h1>
+   Get WASD working, what about a second object controlled by arrows or IJKL<br>
+   
+   <div id="myDiv01" style="position:absolute; left:200;
+     top:200; ">Johnathan</div>
+   
+   </body>
