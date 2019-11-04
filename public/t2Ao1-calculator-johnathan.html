@@ -1,12 +1,10 @@
   
-<input type=text id="myText01" value="3">
-<input type=text id="myText02" value="4"><br>
+<input type=text id="myText01" value="3"><br>
 
-<input type=button value=add onclick:"javascript:add(
-      let myTemp = document.getElementById('myText01','myText02').value
-      let myTemp = document.getElementById('myText02').value
-      document.getElementById('myDiv01').innerHTML = myTemp
-);">
+
+<input type=button value=9 onclick="{
+     document.getElementById('myText01').value=document.getElementById('myText01').value + '9'
+}">
 
 
 <div id="myDiv01">...</div>
