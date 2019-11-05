@@ -1,6 +1,19 @@
   
-<input type=text id="myText01" value="3"><br>
+<input type=text id="myText01" value="3">
+  
+<select id="myText01" size=1 onChange="{
+      let myTemp = document.getElementById('myText01').value
+    document.getElementById('myDiv01').style.borderStyle = myTemp                                      
+    }">    
 
+   <option value="groove">+
+   <option value="dotted">*
+   <option value="double">-
+   <option value="dashed">divid
+   
+</select>
+
+<input type=text id="myText01" value="3"><br>
 
 <input type=button value=9 onclick="{
     parseFloat = (document.getElementById('myText01').value=document.getElementById('myText01').value + '9')
