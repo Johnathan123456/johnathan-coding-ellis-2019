@@ -1,12 +1,15 @@
   
 <input type=text id="myText01" value="3">
   
-<input type=button id="myButton01" >
+<input type=button value=run onclick="{
+      let myTemp = document.getElementById('myText01').value
+      document.getElementById('myDiv01').innerHTML = myTemp
+}">
 
 <input type=text id="myText02" value="4">
 
 <input type=button value=run onclick="{
-      let myTemp = document.getElementById('myText01').value
+      let myTemp = document.getElementById('myText02').value
       document.getElementById('myDiv01').innerHTML = myTemp
 }">
 
