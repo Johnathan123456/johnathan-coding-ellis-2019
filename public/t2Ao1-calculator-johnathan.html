@@ -1,66 +1,13 @@
   
 <input type=text id="myText01" value="3">
   
-<select id="myText01" size=1 onChange="{
+<input type==button id="myButton01" value="+">
+
+<input type=text id="myText02" value="4">
+
+<input type=button value=run onclick="{
       let myTemp = document.getElementById('myText01').value
-    document.getElementById('myDiv01').style.borderStyle = myTemp                                      
-    }">    
-
-   <option value="groove">+
-   <option value="dotted">*
-   <option value="double">-
-   <option value="dashed">divid
-   
-</select>
-
-<input type=text id="myText01" value="3"><br>
-
-<input type=button value=1 onclick="{
-    parseFloat = (document.getElementById('myText01').value=document.getElementById('myText01').value + '1')
-}">
-
-
-<input type=button value=2 onclick="{
-    parseFloat = (document.getElementById('myText01').value=document.getElementById('myText01').value + '2')
-}">
-
-
-<input type=button value=3 onclick="{
-    parseFloat = (document.getElementById('myText01').value=document.getElementById('myText01').value + '3')
-}">
-
-
-<input type=button value=4 onclick="{
-    parseFloat = (document.getElementById('myText01').value=document.getElementById('myText01').value + '4')
-}">
-
-
-<input type=button value=5 onclick="{
-    parseFloat = (document.getElementById('myText01').value=document.getElementById('myText01').value + '5')
-}">
-
-
-<input type=button value=6 onclick="{
-    parseFloat = (document.getElementById('myText01').value=document.getElementById('myText01').value + '6')
-}">
-
-
-<input type=button value=7 onclick="{
-    parseFloat = (document.getElementById('myText01').value=document.getElementById('myText01').value + '7')
-}">
-
-
-<input type=button value=8 onclick="{
-    parseFloat = (document.getElementById('myText01').value=document.getElementById('myText01').value + '8')
-}">
-
-
-<input type=button value=9 onclick="{
-    parseFloat = (document.getElementById('myText01').value=document.getElementById('myText01').value + '9')
-}">
-
-<input type=button value=0 onclick="{
-    parseFloat = (document.getElementById('myText01').value=document.getElementById('myText01').value + '0')
+      document.getElementById('myDiv01').innerHTML = myTemp
 }">
 
 <div id="myDiv01">...</div>
