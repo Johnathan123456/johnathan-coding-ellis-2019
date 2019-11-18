@@ -3,7 +3,9 @@
              constructor(passName, passAge){
                 this.myName = passName;
                 this.myAge = passAge;                                                      
-                } 
+                this.myBreed = passBreed;
+                this.myFur = passFur;                                                      
+            } 
         myShow(){
               document.getElementById('myDiv131').innerHTML = 'Hello '+ this.myName +'. You are ' + this.myAge + ' years old<br>'                                                        
                   }                                                                                                                                         
@@ -11,12 +13,12 @@
                                                                       
          class myCat extends myAnimal {
               myShow(){
-              document.getElementById('myDiv131').innerHTML = this.myName + ' is a great cat who is ' + this.myAge + ' years old<br>'                             
+              document.getElementById('myDiv131').innerHTML = this.myName + ' is a great cat who is ' + this.myAge + ' years old ' + this.myBreed + ' + this.myFur + '                             
              }                                                             
            } // endextended class myCat                                                           
                         
-             myPet = new myCat('Fluffy' , 14)                                                         
-             myPet.myShow()                                                                                                                      
+             myPet = new myCat('Fluffy' , 14,siamese,white-black)                                                         
+             myPet.myShow()                                                             
      }"><br><br>
 
 <div id='myDiv131'>...</div>
