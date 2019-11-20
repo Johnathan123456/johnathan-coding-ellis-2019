@@ -62,7 +62,8 @@ function myHitOther(my1,my2){
                                              
  if ( myHitOther('myImg01','myImg02') ){
       document.getElementById('myImg01').style.left = '20px'                                        
-       
+        document.getElementById('myText01').value = 1 + document.getElementById('myText01').value  
+      mySound1.play()
  alert('you can not aquire the oof')
    }
 }">
@@ -74,7 +75,9 @@ function myHitOther(my1,my2){
  if ( myHitOther('myImg01','myImg02') ){
      document.getElementById('myImg01').style.top = '20px'                                        
 alert('you can not ob tain the oof')
-   }
+    document.getElementById('myText01').value = 1 + document.getElementById('myText01').value  
+      mySound1.play()
+    }
 }">
 
 <input type=button value="go Down"  onclick="{
@@ -84,7 +87,9 @@ alert('you can not ob tain the oof')
  if ( myHitOther('myImg01','myImg02') ){
       document.getElementById('myImg01').style.top = '20px'                                        
 alert('you can not obtain the oof now perish')
-   }
+    document.getElementById('myText01').value = 1 + document.getElementById('myText01').value  
+      mySound1.play()
+    }
 }">
 
 
