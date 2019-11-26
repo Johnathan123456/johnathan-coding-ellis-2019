@@ -36,94 +36,30 @@ You use loops and variables to make fast fancy drawings <br><br>
    }">
 
 <input type=button value=".createLinearGradient(100, 300, 200, 400)" onclick"{
-    let myGradient                                                                            
+    let myGradient = myContext.createLinearGradient(100, 300, 200, 400);                                                                           
+    myGradient.addColorStop(0, 'red');                                                                         
+    myGradient.addColorStop(0.5, 'blue');                                                                         
+    myGradient.addColorStop(1, 'yellow');                                                                         
                                                                              
+    mycontext.fillStyle = myGradient;                                                                         
+    mycontext.fillRect(100, 300, 200, 400);               
                                                                              
-                                                                             
-                                                                             
-                                                                             
-                   
-                                                                             
-                                                                             
-                                                                             
-                                                                             
-                                                                             
-                                                                             
-                                                                             
- }">
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+    // reset fillStyle                                                                         
+    myContext.fillStyle = 'black';                                                                                                                                                   
+ }"><br><br>
+
+<input type=button value="clearRect(20, 20, 50, 50)" onclick"{
+     myContext.clearRect(20, 20, 50, 50);                                                             
+}">
+
+<input type=button value="clear all" onclick"{
+     myContext.clearRect(0, 0, myCanvas.widthy, myCanvas.height);                                                        
+}"><br><br>
+
+<canvas id="myCoolTag" width="1000" height="600" style="border:1px solid #000000;"></canvas>
+
+<script>
+   // set up global variables
+   let myCanvas=document.getElementById('myCoolTag');
+   let myContext=myCanvas.getContext('2d')
+</script>
