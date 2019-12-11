@@ -9,7 +9,7 @@
    let myGlobalX = 0
    let myClock
 
-
+   let myInterval
    // global functions here
 function myHitOther(my1,my2){
    left1   = parseInt(document.getElementById(my1).style.left)
@@ -63,3 +63,13 @@ function myCheckHit(){
    myCheckHit()     // checks for all collisions
 }"><br><br>
       
+<input type=button value="Go Right" onclick="{
+                
+    clearInterval(myInterval)
+    myInterval = setInterval(function(){
+                                             
+        document.getElementById('myImg01').style.left = parseInt(document.getElementById('myImg01').style.left) + 10
+                
+    } ,200)
+                                             
+}">
