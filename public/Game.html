@@ -35,15 +35,16 @@ function myCheckHit(){
       //document.getElementById('myImg01').style.left = '20px'
    }
 
-   // more if statements here
-
+  if ( myHitOther('myImg01','myImg02') ){
+      
+  }
 }
 
 
 </script>
 
-<img id="myImg01" style="position:absolute; width:100px; height:80px; top:0px; left:50px;"  src="myImage01.jpg">
-<img id="myImg02" style="position:absolute; width:100px; height:80px; top:0px; left:250px;" src="myImage02.jpg">
+<img id="myImg01" style="position:absolute; width:100px; height:80px; top:0px; left:50px;"  src="https://piskel-imgstore-b.appspot.com/img/f841887d-1c36-11ea-be6a-65b53bff65d9.gif">
+<img id="myImg02" style="position:absolute; width:100px; height:80px; top:0px; left:250px;" src="https://piskel-imgstore-b.appspot.com/img/0de7563d-1c37-11ea-b886-65b53bff65d9.gif">
 
 <input type=button value="Auto Background Left" onclick="{
    clearInterval(myClock)
@@ -61,3 +62,4 @@ function myCheckHit(){
    document.getElementById('myImg01').style.left = parseInt(document.getElementById('myImg01').style.left) + 10 + 'px'
    myCheckHit()     // checks for all collisions
 }"><br><br>
+      
